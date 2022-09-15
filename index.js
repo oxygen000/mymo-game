@@ -44,19 +44,19 @@ function update() {
 window.addEventListener("keydown", (e) => {
   if (e.key == "ArrowUp") {
     playerVel.y = -1 * PLAYER_SPEED;
-    PLAYER.style.backgroundImage = "url('assets/player_front.png')";
+    PLAYER.style.backgroundImage = "url('player_front.png')";
   }
   if (e.key == "ArrowDown") {
     playerVel.y = 1 * PLAYER_SPEED;
-    PLAYER.style.backgroundImage = "url('assets/player_back.png')";
+    PLAYER.style.backgroundImage = "url('player_back.png')";
   }
   if (e.key == "ArrowLeft") {
     playerVel.x = -1 * PLAYER_SPEED;
-    PLAYER.style.backgroundImage = "url('assets/player_left.png')";
+    PLAYER.style.backgroundImage = "url('player_left.png')";
   }
   if (e.key == "ArrowRight") {
     playerVel.x = 1 * PLAYER_SPEED;
-    PLAYER.style.backgroundImage = "url('assets/player_right.png')";
+    PLAYER.style.backgroundImage = "url('player_right.png')";
   }
   PLAYER.classList.add("walk");
 });
